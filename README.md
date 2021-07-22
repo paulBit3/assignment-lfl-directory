@@ -44,15 +44,15 @@ I also created a new branch master to keep the default branch main safe.
  
  -built the side bar menu with all the section  
  
-###2-implemented the DOM and tested all the function to see how my app interact in the DOM(see console_data_test txt file included in the project)  
+### 2-implemented the DOM and tested all the function to see how my app interact in the DOM(see console_data_test txt file included in the project)  
 
-###3-implemented next the AppJs that contains helpers functions for the app to interact with the  DOM for the UI.  
+### 3-implemented next the AppJs that contains helpers functions for the app to interact with the  DOM for the UI.  
 
-###4-I tested all AppJs function in console.log  (see console_data_test txt file) and fixed bugs 
+### 4-I tested all AppJs function in console.log  (see console_data_test txt file) and fixed bugs 
 
-###5-styling
+### 5-styling
 -I included fontawesome, google font, and bootstrap css for a great UX and UI
 -styled my app  
 
-###6-fully tested the app on Chrome browser in console for the DOM interaction and User input test.  
-###Test: download code on your local. run the index file in your browser. voilaaa!!
+### 6-fully tested the app on Chrome browser in console for the DOM interaction and User input test.  
+### Test: download code on your local. run the index file in your browser. voilaaa!!
