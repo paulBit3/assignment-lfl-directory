@@ -48,11 +48,11 @@ I also created a new branch master to keep the default branch main safe.
 
 ###3-implemented next the AppJs that contains helpers functions for the app to interact with the  DOM for the UI.  
 
-###4-I tested all AppJs function in console.log  (see console_data_test txt file)
+###4-I tested all AppJs function in console.log  (see console_data_test txt file) and fixed bugs 
 
 ###5-styling
 -I included fontawesome, google font, and bootstrap css for a great UX and UI
 -styled my app  
 
 ###6-fully tested the app on Chrome browser in console for the DOM interaction and User input test.  
-Test screens
+###Test: download code on your local. run the index file in your browser. voilaaa!!
