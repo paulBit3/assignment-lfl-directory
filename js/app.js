@@ -62,7 +62,7 @@ $('#veriBtn').on('click', function(){
 
 	//if founded. display yes to user
 	if(exit === true){
-		alert(`${empName} is in the directory.` );
+		alert(`yes, ${empName} is in the directory.` );
 	} else {
 		alert(`${empName} is not exit in directory` );
 	}
