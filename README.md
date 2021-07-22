@@ -37,10 +37,13 @@ Feel free to reach out to with any questions or for clarification.
 
 ## Dev notes
 I first refresh myself with VanillaJS, before defining the UI and create folder to keep the app simple. 
-I also created a new branch master to keep the default branch main safe.
-###1-Built the HTML markup
- -built a breadcrumb to show to the user the current page of the
- -built the side bar menu with all the section
+I also created a new branch master to keep the default branch main safe.  
+
+### 1-Built the HTML markup
+ -built a breadcrumb to show to the user the current page of the  
+ 
+ -built the side bar menu with all the section  
+ 
 ###2-implemented the DOM and tested all the function to see how my app interact in the DOM(see console_data_test txt file included in the project)
 ###3-implemented next the AppJs that contains helpers functions for the app to interact with the  DOM for the UI.
 ###4-I tested all AppJs function for 
