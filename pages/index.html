@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <!-- the app css -->
     <link rel="stylesheet" href="../css/style.css">
@@ -26,20 +27,20 @@
             <!-- side menu -->
             <div class="col-sm3 col-md-2">
               <ul class="nav nav-pills nav-stacked" id="sideNav" data-spy="affix" data-offset-top="400">
-                <i class="fas fa-address-book"></i>
-                <li class="nav-link active" id="view-employee">
+                <i class="fas fa-address-book center"></i>
+                <li class="nav-link active" id="viewContact">
                   <a href="#">VIEW</a>
                 </li>
-                <li class="nav-link" id="add-employee">
+                <li class="nav-link" id="addContact">
                   <a href="#">ADD</a>
                 </li>
-                <li class="nav-link" id="verify-employee">
+                <li class="nav-link" id="verifyContact">
                   <a href="#">VERIFY</a>
                 </li>
-                <li class="nav-link" id="update-employee">
+                <li class="nav-link" id="updateContact">
                   <a href="#">UPDATE</a>
                 </li>
-                <li class="nav-link" id="del-employee">
+                <li class="nav-link" id="removeContact">
                   <a href="#">DELETE</a>
                 </li>
               </ul>
@@ -52,8 +53,8 @@
                 <div class="input-group input-group-sm">
                   <div class="input-group-prepend">
                     <input type="text" class="form-control" aria-label="Name" placeholder="Name" id="Name">
-                    <input type="text" class="form-control" aria-label="Office number" placeholder="Office #" id="Num">
-                    <input type="text" class="form-control" aria-label="Phone number" placeholder="Phone #" id="Phone">
+                    <input type="text" class="form-control" aria-label="Office number" placeholder="Office#" id="Num">
+                    <input type="text" class="form-control" aria-label="Phone number" placeholder="Phone#" id="Phone">
                   </div>
                   <div class="input-group-append">
                     <button type="button" class="btn btn-outline-secondary" id="sveBtn">Add</button>
@@ -65,9 +66,9 @@
                 <!-- we will use input-group to control and resize our form -->
                 <div class="input-group input-group-sm">
                   <div class="input-group-prepend">
-                    <input type="text" class="form-control" aria-label="Name" id="u-Name">
-                    <input type="text" class="form-control" aria-label="Office number" id="u-Num">
-                    <input type="text" class="form-control" aria-label="Phone number" id="u-Phone">
+                    <input type="text" class="form-control" aria-label="Update name" placeholder="Name"  id="upName">
+                    <input type="text" class="form-control" aria-label="Office number" placeholder="Office#" id="upNum">
+                    <input type="text" class="form-control" aria-label="Phone number" placeholder="Phone#" id="upPhone">
                   </div>
                   <div class="input-group-append">
                     <button type="button" class="btn btn-outline-secondary" id="upBtn">Update</button>
@@ -79,7 +80,7 @@
                 <div class="col">
                   <div class="input-group input-group-sm">
                   <div class="input-group-prepend">
-                    <input type="text" class="form-control" aria-label="Name" placeholder="Enter employee name" id="n-verify">
+                    <input type="text" class="form-control" placeholder="Enter employee name" id="vName">
                   </div>
                   <div class="input-group-append">
                     <button type="button" class="btn btn-outline-secondary" id="veriBtn">Search</button>
@@ -92,7 +93,7 @@
                 <div class="col">
                   <div class="input-group input-group-sm">
                   <div class="input-group-prepend">
-                    <input type="text" class="form-control" aria-label="Name" placeholder="Enter employee name" id="del-Name">
+                    <input type="text" class="form-control" placeholder="Contact name" id="delName">
                   </div>
                   <div class="input-group-append">
                     <button type="button" class="btn btn-outline-secondary" id="delBtn">Delete</button>
@@ -102,10 +103,10 @@
               </div>
             </div>
             <!-- End CRUD Menu bar section -->
-            
+
             <!-- empty content for purpuses -->
             <div class="row">
-              <div class="col" id="content"></div>
+              <div class="col-md-4" id="content"></div>
             </div>
           </div>
         </div>

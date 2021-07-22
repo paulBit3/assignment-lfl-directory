@@ -83,7 +83,7 @@ const $ = function (selector) {
 A list of helper function that will run task in the dom for the App*/
 
 // this method prepare and return employee object
-const newEmployee =  function (object){
+function newEmployee(object){
   let employee = 
   `<div class="box box-solid box-default">
    <p> Name: ${object.name}</p>
@@ -92,7 +92,9 @@ const newEmployee =  function (object){
   </div>`
 
   //employee object
-  console.log(employee)
+  //console.log(employee)
+  //{name: "Jan", officeNum: 1, phoneNum: "222-222-2222"}...
+
   return employee;
 }
 
@@ -102,9 +104,9 @@ let addEmployee = document.getElementById('addSection');
 //console.log(addEmployee)
 // div#addSection.row
 
-let updateEmployee = document.getElementById('upSection');
-
 let verifyEmployee = document.getElementById('veriSection');
+
+let updateEmployee = document.getElementById('upSection');
 
 let removeEmployee = document.getElementById('delSection');
 
@@ -113,15 +115,16 @@ let taskBar = $("#sideNav");
 
 
 //updating employee list when user added
-const updateEmployeeList = function(){
+function updateEmployeeList(){
   //calling the empty method
   $('#content').empty();
 
   for(i=0; i<employeeList.length; i++){
-    //testing
-    console.log(employeeList[i])
+
+    //console testing
+    //console.log(employeeList[i])
     //employeeList[2]
-    //{name: "Margie", officeNum: 789, phoneNum: "789-789-7897"}
+    //{name: "Margie", officeNum: 789, phoneNum: "789-789-7897"}...
 
     //calling the append method and insert the node object
     $('#content').append(newEmployee(employeeList[i]));
@@ -129,8 +132,8 @@ const updateEmployeeList = function(){
 }
 
 
-//method to display an employee contact
-const viewContact = function(){
+//method to handle display an employee contact
+function viewContact(){
 
   //make elements invisible
   addEmployee.style.display ='none';
@@ -145,8 +148,8 @@ const viewContact = function(){
   taskBar.removeClass("rAction");
 }
 
-//method to add employee contact
-const addContact = function(){
+//method to handle add employee contact
+function addContact(){
 
   //make elements visible
   addEmployee.style.display ='block';
@@ -165,8 +168,8 @@ const addContact = function(){
 
 
 
-//method to verify employee contact
-const verifyContact = function(){
+//method to handle verify employee contact
+function verifyContact(){
   //make elements invisible
   addEmployee.style.display ='none';
 
@@ -187,8 +190,8 @@ const verifyContact = function(){
 
 
 
-//method to update employee contact
-const updateContact = function(){
+//method to handle update employee contact
+function updateContact(){
   //make elements invisible
   addEmployee.style.display ='none';
 
@@ -208,16 +211,14 @@ const updateContact = function(){
 
 
 
-//method to delete employee contact
-const removeContact = function(){
+//method to handle delete employee contact
+function removeContact(){
   //make elements invisible
   addEmployee.style.display ='none';
-
-  //make elements visible
   verifyEmployee.style.display = 'none';
-
-  //make elements invisible
   updateEmployee.style.display ='none';
+  
+  //make elements visible
   removeEmployee.style.display = 'block';
 
   //just display employee data
@@ -228,4 +229,39 @@ const removeContact = function(){
 }
 
 
+//clear input fields
+function ClearInpField(){
+  let input = document.getElementsByTagName("input");
+  for(let i=0; i<input.length; i++){
+    input[i].value = '';
+  }
+}
 
+
+//method return a new char from a input value with the 1st character(index 0) uppercase
+/*function upStringCase(string){
+  return string.charAt(0).toUpperCase();
+}*/
+
+
+//fixed getData display bug
+function upStringCase(string){
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+//and called in input value
+function getData(ID){
+  let data = $(ID).val();
+  return upStringCase(data);
+}
+
+/*for getData testing purposes
+this display 
+Name: P <<--- a bug here. this should return the full name but instead, returns 1st charater
+Office number: 3
+Phone number: 6*/
+
+/*after fixing the bug 
+Name: Paul
+Office number: 33
+Phone number: 6154983533*/

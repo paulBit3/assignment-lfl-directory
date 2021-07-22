@@ -1,5 +1,118 @@
 /* Your work here */
 
+/* styling our App */
+
 .rAction{
 	height: auto;
+}
+
+.container{
+	margin-left: 0;
+}
+
+/*main css */
+.main{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	min-height: 400px;
+	margin: -20px 10px 10px;
+	/*background-color: #eee;*/
+	position: relative;
+	z-index: 2;
+	-webkit-box-shadow: 0 50px 24px 5px #d7d7d7;
+  	-moz-box-shadow: 0 50px 24px 5px #d7d7d7;
+  	box-shadow: 0 50px 24px 5px #d7d7d7;
+}
+
+.main .breadcrumb {
+  	padding: 25px;
+  	background-color: white;
+  	border-bottom: solid 1px #ccc;
+  	font-size: 26px;
+  	font-weight: 200;
+  	margin-bottom: 0;
+}
+
+.main .breadcrumb a{
+	padding: 7px 12px;
+}
+
+.main .breadcrumb a:hover{
+	text-decoration: none;
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.main .breadcrumb .active {
+  	font-size: 20px;
+}
+.main.main-primary {
+  	background-color: #fff;
+  	color: #555;
+}
+.main.main-primary .breadcrumb {
+  	background-color: #2196F3;
+}
+
+
+/*sideBar*/
+
+.main.main-primary .breadcrumb li {
+  	color: #555;
+}
+
+.main.main-primary .breadcrumb li a {
+  	color: #fff;
+}
+
+.main.main-white {
+  	background-color: white;
+}
+
+.main .nav-pills {
+  	background-color: white;
+  	border-right: solid 1px #ccc;
+  	padding-top: 50px;
+}
+
+.main .nav-pills li {
+  	border-bottom: solid 1px #eee;
+}
+
+.main .nav-pills li a {
+  	color: #555;
+}
+
+.main .nav-pills li a:hover {
+  	/*background-color: #2196F3;
+ 	color: #fff;*/
+  	-webkit-border-radius: 0;
+  	-moz-border-radius: 0;
+  	border-radius: 0;
+  	-moz-background-clip: padding;
+  	-webkit-background-clip: padding-box;
+  	background-clip: padding-box;
+}
+
+#sideNav{
+	padding-top: 150px;
+	background-color: rgba(0, 0, 0, 1.0);
+	font-size: 18px;
+	font-weight: 400;
+	color: #FFF;
+	height: auto !important;
+}
+
+/*font awesome*/
+.center {
+	text-align: center;
+    width: 100%;
+}
+
+
+/*dom box */
+.box{
+	border: solid 1px;
+	padding-left: 3px;
+	margin: 5px;
 }
