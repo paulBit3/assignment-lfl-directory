@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <!-- the app css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>LFL Employee Directory</title>
+  </head>
+
+  <body>
+    <!-- building the app page -->
+    <div class="wrapper">
+      <div class="container">
+        <!-- display current page name -->
+        <div class="main">
+          <ol class="breadcrumb">
+            <li><a href="#">Directory</a></li>
+            <li class="active">Employee</li>
+          </ol>
+          <div class="row">
+            <!-- side menu -->
+            <div class="col-sm3 col-md-2">
+              <ul class="nav nav-pills nav-stacked" id="sideNav" data-spy="affix" data-offset-top="400">
+                <i class="fas fa-address-book"></i>
+                <li class="nav-link active" id="view-employee">
+                  <a href="#">VIEW</a>
+                </li>
+                <li class="nav-link" id="add-employee">
+                  <a href="#">ADD</a>
+                </li>
+                <li class="nav-link" id="verify-employee">
+                  <a href="#">VERIFY</a>
+                </li>
+                <li class="nav-link" id="update-employee">
+                  <a href="#">UPDATE</a>
+                </li>
+                <li class="nav-link" id="del-employee">
+                  <a href="#">DELETE</a>
+                </li>
+              </ul>
+            </div>
+            <!-- CRUD Menu bar section -->
+            <div class="col">
+              <!-- add contact menu section -->
+              <div class="row" id="addSection">
+                <!-- we will use input-group to control and resize our form -->
+                <div class="input-group input-group-sm">
+                  <div class="input-group-prepend">
+                    <input type="text" class="form-control" aria-label="Name" placeholder="Name" id="Name">
+                    <input type="text" class="form-control" aria-label="Office number" placeholder="Office #" id="Num">
+                    <input type="text" class="form-control" aria-label="Phone number" placeholder="Phone #" id="Phone">
+                  </div>
+                  <div class="input-group-append">
+                    <button type="button" class="btn btn-outline-secondary" id="sveBtn">Add</button>
+                  </div>
+                </div>
+              </div>
+              <!-- updating contact section -->
+              <div class="row" id="upSection">
+                <!-- we will use input-group to control and resize our form -->
+                <div class="input-group input-group-sm">
+                  <div class="input-group-prepend">
+                    <input type="text" class="form-control" aria-label="Name" id="u-Name">
+                    <input type="text" class="form-control" aria-label="Office number" id="u-Num">
+                    <input type="text" class="form-control" aria-label="Phone number" id="u-Phone">
+                  </div>
+                  <div class="input-group-append">
+                    <button type="button" class="btn btn-outline-secondary" id="upBtn">Update</button>
+                  </div>
+                </div>
+              </div>
+              <!-- verify contact section -->
+              <div class="row" id="veriSection">
+                <div class="col">
+                  <div class="input-group input-group-sm">
+                  <div class="input-group-prepend">
+                    <input type="text" class="form-control" aria-label="Name" placeholder="Enter employee name" id="n-verify">
+                  </div>
+                  <div class="input-group-append">
+                    <button type="button" class="btn btn-outline-secondary" id="veriBtn">Search</button>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <!-- deleting contact section -->
+              <div class="row" id="delSection">
+                <div class="col">
+                  <div class="input-group input-group-sm">
+                  <div class="input-group-prepend">
+                    <input type="text" class="form-control" aria-label="Name" placeholder="Enter employee name" id="del-Name">
+                  </div>
+                  <div class="input-group-append">
+                    <button type="button" class="btn btn-outline-secondary" id="delBtn">Delete</button>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <!-- End CRUD Menu bar section -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/dom.js"></script>
+    <script src="../js/employee-list.js"></script>
+    <script src="../js/app.js"></script>
+  </body>
+</html>
